@@ -1,0 +1,9 @@
+$(function(){
+  $(".menu-trigger").on("click",function(event){
+    $(this).toggleClass("active");//thisは要素自身
+    //指定されているclass（active）を削除、ない場合にはclassが追加
+    $("#sp-menu").fadeToggle();
+    //要素のフェードイン・フェードアウトを切り替えるメソッド
+    event.preventDefault();
+  });
+});
